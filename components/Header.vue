@@ -21,7 +21,7 @@
       class="user"
       @click="toAbout">
       <img
-        :src="name"
+        src="https://heropy.blog/css/images/logo.png"
         :alt="name" />
     </div>
   </header>

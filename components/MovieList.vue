@@ -8,8 +8,8 @@
         </div> -->
       <Loader v-if="loading" />
       <div
-        class="message"
-        v-if="message">
+        v-if="message"
+        class="message">
         {{ message }}
       </div>
       <div class="movies">
@@ -21,7 +21,7 @@
 
         <MovieItem
           v-for="movie in movies"
-          :key="movie.imdbID" 
+          :key="movie.imdbID"
           :movie="movie" />
       </div>
     </div>

@@ -1,4 +1,6 @@
 .package copy.json
+.package copy 2.json
+.package copy 3.json
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template

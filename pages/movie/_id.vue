@@ -25,7 +25,7 @@
       v-else
       class="movie-details">
       <div
-        :style="{ backgroundImage: `url(${requestDiffSizeImage(theMovie.Poster)})`}"
+        :style="{ backgroundImage: `url(${requestDiffSizeImage(theMovie.Poster)})` }"
         class="poster">
         <Loader
           v-if="imageLoading"
@@ -116,12 +116,12 @@ export default {
   //     id: this.$route.params.id
   //   })
   // },
-  // computed: {
-  //   ...mapState('movie', [
-  //     'theMovie',
-  //     'loading'
-  //   ])
-  // },
+  computed: {
+    ...mapState('movie', [
+      'theMovie',
+      'loading'
+    ])
+  },
   methods: {
     // ...mapActions('movie', [
     //   'searchMovieWithId'
