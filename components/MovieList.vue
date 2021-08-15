@@ -58,7 +58,7 @@ export default {
 // @import "@/scss/main.scss";
 // @import "@/scss/main";
 
-.contanier {
+.container {
   margin-top: 30px;
   .inner {
     background-color: $gray-200;

@@ -43,7 +43,7 @@ export default {
         },
         {
           name: 'Movie',
-          href: '/movie.tt4520988', // 겨울왕국2
+          href: '/movie/tt4520988', // 겨울왕국2
           path: /^\/movie/ // /movie로 시작하는 주소 
         },
         {
