@@ -1,0 +1,5 @@
+$primary: #fdc000;
+
+// 외부에서 scss 파일 가져오기 
+// 아래와 동일한 내용 : @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap.scss";
