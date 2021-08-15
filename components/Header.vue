@@ -1,5 +1,5 @@
 <template>
-  <heaer>
+  <header>
     <!-- logo -->
     <Logo />
     <div class="nav nav-pills">
@@ -7,14 +7,14 @@
         v-for="nav in navigations"
         :key="nav.name"
         class="nav-item">
-        <Router-link
+        <RouterLink
           :to="nav.href"
           :class="{ active: isMatch(nav.path) }"
           active-class="active"
           class="nav-link"
           exact>
           {{ nav.name }}
-        </Router-link>
+        </RouterLink>
       </div>
     </div>
     <div
@@ -24,7 +24,7 @@
         :src="name"
         :alt="name" />
     </div>
-  </heaer>
+  </header>
 </template>
 
 <script>

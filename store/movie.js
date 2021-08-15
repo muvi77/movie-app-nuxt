@@ -7,7 +7,7 @@ export default {
     state: () => ({
         movies: [],
         loading: false,
-        message: 'Search for the moive title!',
+        message: 'Search for the movie title!',
         theMovie: {}
     }),
     getters: {},
@@ -57,12 +57,12 @@ export default {
                 // const total = res.data.totalResults 
                 // const total = totalResults // 문자네...
                 const total = parseInt(totalResults, 10) // 숫자로 변환 '266' => 266
-                const pageLength = Math.ceil(total) / 10 // 26.6 => 27
+                const pageLength = Math.ceil(total / 10) // 26.6 => 27
 
                 // 검색된 총 결과가 2페이지 이상인 경우
                 if (pageLength > 1) {
                     // 2페이지부터 반복 처리
-                    for (let page = 2; page < pageLength; page += 1) {
+                    for (let page = 2; page <= pageLength; page += 1) {
                         // if (page > (payload.number / 10)) { // 20 넘으면 2
                         //   break // 반복문 종료 
                         // }

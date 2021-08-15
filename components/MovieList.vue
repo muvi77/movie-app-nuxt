@@ -55,7 +55,7 @@ export default {
 <style lang="scss" scoped>
 // 색상 변수를 계속 가지고 와야하니 모든 프로젝트에서
 // 사용하도록 webpack.config.js에 세팅 
-@import "@/scss/main.scss";
+// @import "@/scss/main.scss";
 // @import "@/scss/main";
 
 .contanier {

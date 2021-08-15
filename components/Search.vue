@@ -60,7 +60,7 @@ export default {
               },
               {
                 name: 'number',
-                items: ['10', '20', '30']
+                items: [10, 20, 30]
               },
                {
                 name: 'year',

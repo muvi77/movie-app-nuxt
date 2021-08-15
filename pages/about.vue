@@ -61,7 +61,7 @@ export default {
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:site_name', property: 'og:site_name', content: 'Nuxt Movie App' },
         { hid: 'og:title', property: 'og:title', content: this.name },
-        { hid: 'og:description', property: 'og:description', content: this.email},
+        { hid: 'og:description', property: 'og:description', content: this.email },
         { hid: 'og:image', property: 'og:image', content: this.image },
         { hid: 'og:url', property: 'og:url', content: process.env.CLIENT_URL + this.$route.fullPath },
         // http://localhost:3000 +  /about

@@ -80,6 +80,7 @@
 
 <script>
 // import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 import Loader from '@/components/Loader'
 // import Loader from '../components/Loader.vue'
 
@@ -91,7 +92,7 @@ export default {
   // data() + created() 
   // this.$route.params 
   async asyncData({ store, params }) {
-    await store.dispath('movie/searchMovieWithId', {
+    await store.dispatch('movie/searchMovieWithId', {
       id: params.id
     })
     //  this.searchMovieWithId({
@@ -144,6 +145,7 @@ export default {
       //   this.imageLoading = false
       // })
       this.$loadImage(src).then(() => {
+        console.log('then:', src, this.imageLoading)
         this.imageLoading = false
       })
 
@@ -172,7 +174,7 @@ export default {
   .poster {
     flex-shrink: 0;
     width: 500px;
-    height: 500px * 3/2;
+    height: 500px * (3 / 2);
     margin-right: 70px;
   }
   .specs {
@@ -207,7 +209,7 @@ export default {
   color: $gray-600;
   .poster {
     width: 500px;
-    height: 500px * 3/2;
+    height: 500px * (3 / 2);
     margin-right: 70px;
     border-radius: 10px;
     background-color: $gray-200;

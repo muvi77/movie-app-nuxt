@@ -15,13 +15,13 @@ export default {
       { hid: 'og:title', property: 'og:title', content: 'Movie App / Search' },
       { hid: 'og:description', property: 'og:description', content: 'The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users.' },
       { hid: 'og:image', property: 'og:image', content: 'https://heropy.blog/css/images/logo.png' },
-      { hid: 'og:url', property: 'og:url', content: process.env.CLIENT_URL },
+      { hid: 'og:url', property: 'og:url', content: process.env.CLIENT_URL }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com',  crossorigin: true },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap' }
     ]
   },
 
@@ -62,7 +62,7 @@ export default {
     babel: {
       presets: ['@babel/preset-env'],
       plugins: [
-        ['@babel/plugin-transform-runtime']
+        ['@babel/plugin-transform-runtime']  
       ]
     },
     postcss: {
@@ -75,6 +75,7 @@ export default {
   serverMiddleware: [
     {
       path: '/api/movie',
+      // path: '/.netlify/functions/movie',
       handler: '~/server-middleware/movie.js'
     }
   ]
